@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Día nevado soleado · Graficación</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero"><h1>☀️ Día nevado soleado</h1><p>Un muñeco de nieve bajo el sol, dibujado con elipses y un rectángulo.</p></header>
+  <main>
+    <section class="tarjeta">
+      <div id="lienzo"></div>
+    </section>
+    <section class="tarjeta">
+      <h2>Cómo funciona</h2>
+      <ul>
+        <li><code>background(32, 247, 218)</code> pinta el cielo de color turquesa.</li>
+        <li><code>rect(0, 300, 400, 100)</code> con <code>fill</code> verde dibuja el pasto.</li>
+        <li>Una <code>ellipse()</code> amarilla de 100×100 en la esquina superior es el sol.</li>
+        <li>Tres elipses blancas apiladas, de grande a pequeña, forman el cuerpo del muñeco de nieve.</li>
+      </ul>
+      <p>
+        El orden del código importa: lo que se dibuja después queda encima de lo que se
+        dibujó antes.
+      </p>
+    </section>
+    <div class="nav-pie"><a href="cena.html">← ¿Qué hay de cena?</a><a href="muneco.html">Muñeco de nieve →</a></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script src="js/nevado.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
