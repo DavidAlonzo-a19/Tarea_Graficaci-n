@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Qué hay de cena? · Graficación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero"><h1>🍽️ ¿Qué hay de cena?</h1><p>Un plato con huevos estrellados sobre una mesa de madera.</p></header>
+  <main>
+    <section class="tarjeta">
+      <div id="lienzo"></div>
+    </section>
+    <section class="tarjeta">
+      <h2>Cómo funciona</h2>
+      <ul>
+        <li><code>background(186, 145, 20)</code> pinta la mesa de madera, y unas líneas de color más oscuro le dan vetas.</li>
+        <li>Dos <code>ellipse()</code> concéntricas forman el plato: una grande para el borde y una menor para el centro.</li>
+        <li>Las claras de huevo son elipses blancas y las yemas son elipses amarillas más pequeñas encima.</li>
+        <li><code>rect()</code> con <code>fill(250, 148, 15)</code> dibuja la pieza naranja que acompaña los huevos.</li>
+      </ul>
+      <p>
+        Como en todos los dibujos, el orden importa: las claras se dibujan antes que las
+        yemas para que las yemas queden encima. A la versión original le agregué detalles
+        pequeños: vetas de madera, sombra del plato, brillo en las yemas, pimienta y
+        esquinas redondeadas en el rectángulo.
+      </p>
+    </section>
+    <div class="nav-pie"><a href="conejo.html">← Dientes de conejo</a><a href="nevado.html">Día nevado soleado →</a></div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <script src="cena.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>
